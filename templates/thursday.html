@@ -1,0 +1,20 @@
+{% extends 'base1.html' %}
+
+{% block title %} Thrusday {% endblock %}
+
+{% block content %}
+    <h1>Duke Nukem!</h1>
+<p>Its time to kick ass and chew bubble gum and im all out of gum</p>
+<h1>Days of the week</h1>
+
+<ul>
+{% for day in week_days %}
+    {% if day == "saturday" %}
+        <li>weekend</li>
+    {% else %}
+        <li>{{ day }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}
+
